@@ -5,7 +5,7 @@
  * @desc 默认控制器
  * @see http://www.php.net/manual/en/class.yaf-controller-abstract.php
  */
-class IndexController extends Yaf_Controller_Abstract {
+class IndexController extends Yaf\Controller_Abstract {
 
 	/** 
      * 默认动作
@@ -14,7 +14,7 @@ class IndexController extends Yaf_Controller_Abstract {
      */
 	public function indexAction($name = "Stranger") {
 		//1. fetch query
-		$get = $this->getRequest()->getQuery("get", "default value");
+		$name = $this->getRequest()->getQuery("get", "default value");
 
 		//2. fetch model
 		$model = new SampleModel();
