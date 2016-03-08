@@ -1,2 +1,2 @@
-css files
+js files
 
